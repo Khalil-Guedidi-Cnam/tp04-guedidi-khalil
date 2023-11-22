@@ -1,0 +1,8 @@
+<h1>Liste des produits</h1>
+<div class="catalogue">
+  <div class="product" *ngFor="let product of products">
+    <h3>{{ product.name }}</h3>
+    <p>{{ product.description }}</p>
+    <button (click)="onAddToCart(product)">Ajouter au panier</button>
+  </div>  
+</div>

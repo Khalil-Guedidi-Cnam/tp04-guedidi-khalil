@@ -1,0 +1,7 @@
+<h1>Panier</h1>
+<div class="panier">
+  <div class="product" *ngFor="let product of panier">
+    <h3>{{ product.name }}</h3>
+    <button *ngIf="product.uuid" (click)="supprimerProduit(product.uuid)">Supprimer du panier</button>
+  </div>
+</div>
